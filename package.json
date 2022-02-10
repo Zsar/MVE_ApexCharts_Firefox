@@ -1,21 +1,25 @@
 {
-  "name": "ts_without_dependencies",
+  "name": "markers-on-chart-displayed-incorrectly",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
+  "description": "Markers on mouse-over have the wrong order and layer in Firefox \"91.3\" and 91.5.1esr (64-Bit)",
+  "private": true,
+  "engines": {
+    "node": "16.4.0"
+  },
   "dependencies": {
-    "typescript": "^3.2.2"
+    "apexcharts": "3.30.0",
+    "typescript": "3.9.10"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "5.68.0",
+    "webpack-cli": "4.9.2"
+  },
   "scripts": {
-    "start": "node server",
-    "redo_server_file": "tsc --allowJs --target esnext --removeComments --outFile server/index.js server/index.doc.js"
+    "build": "npx tsc && npx webpack",
+    "start": "node server"
   },
-  "keywords": [],
-  "author": "aleph-naught2tog",
+  "keywords": ["bug", "mve"],
+  "author": "Simon Beyer <Simon.Beyer@t-systems.com>",
   "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:aleph-naught2tog/ts_without_dependencies.git"
-  }
+  "repository": "github:Zsar/MVE_ApexCharts_Firefox"
 }

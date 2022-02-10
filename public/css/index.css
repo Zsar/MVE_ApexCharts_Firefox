@@ -1,9 +1,7 @@
-* {
-    font-family: sans-serif;
-    padding: 0.25rem;
+body {
+    background-color: #666666
 }
 
-p {
-    background-color: lemonchiffon;
-    border: dashed 1px black;
+#chart {
+    max-width: 30%
 }
